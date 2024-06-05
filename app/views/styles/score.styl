@@ -1,0 +1,274 @@
+#score-ui
+  position fixed
+  z-index 0
+  background color-beige
+
+  top 0
+  right 0
+  bottom 0
+  left 0
+
+  width 100%
+  height 100%
+
+  overflow hidden
+
+  #meter
+    position absolute
+    z-index 2
+    background transparent url(../images/meter.png) repeat-y top left
+    width 20px
+    height 100%
+    background-position 0 100%
+    transition background-position 0.5s ease-out
+
+
+  #water
+    user-select none
+    position relative
+    height 100%
+    z-index 1
+    top 100%
+    margin-top -100px
+    transition top 0.6s ease-out
+
+    #surface
+      position relative
+      width 100%
+      height 200px
+      overflow hidden
+
+      canvas
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 200px
+        opacity 0.5
+
+    #volume
+      position relative
+      top -1px
+      height 300%
+      background-color #bae1ec
+      background linear-gradient(top, #bae1ec, #7accfa);
+      transition height 0.6s ease-out
+
+
+  #score-display
+    position absolute
+    z-index 3
+    left 0
+    top 100%
+    transform translateY(-50%)
+    padding-left 20px
+    text-align center
+    font-size 1rem
+    transition top 0.6s ease-out
+
+    &.pushup
+      transform translateY(-100%)
+
+    #score-label
+      display none
+      color color-turquoise
+      font-size 0.8em
+      font-weight 600
+
+    span
+      display block
+
+    .tri
+      position absolute
+      top 50%
+      left 0
+      margin-top -5px
+      width 0
+      height 0
+      border-left 10px solid color-bg
+      border-top 10px solid transparent
+      border-bottom 10px solid transparent
+
+    #score-value
+      font-weight 800
+      font-size 3.2em
+      line-height 1em
+
+    #score-units
+      font-weight 400
+      font-size 1.2em
+
+    #score-graph, #score-table
+      background-color color-turquoise
+
+      @media screen-desktop-min
+        &:hover
+          background-color color-turquoise-dark
+
+      span
+        display inline-block
+        font-size 1.1rem
+        margin 0 20px 0 10px
+
+        &.icon
+          margin 0
+          font-size 1.4rem
+          position relative
+          left 1px
+
+    .household-score
+      color #0262a1
+      font-size 0.75em
+      vertical-align middle
+
+      // Puts it on the right, but so many views just hide it...
+      // position: absolute
+      // left 105%
+      // top 50%
+      // transform translateY(-50%)
+      // width 140px
+
+      display none
+
+      span.tag
+        display inline
+        vertical-align middle
+        font-weight 600
+        font-size 1.8em
+
+      span.value
+        margin-left 4px
+        position relative
+        top -3px
+        font-weight 800
+        color #0262a1
+        font-size 2.4em
+        display inline !important
+        vertical-align middle
+        text-shadow 0px 0px 3px #fff
+
+        span.units
+          font-size 0.7em
+          display inline
+          vertical-align middle
+          font-weight 400
+          margin-left 4px
+    
+    #completion-personal-title
+      display none
+
+    &.complete
+      position absolute
+      left 50%
+      width 80% !important
+      top auto !important
+      bottom 70%
+      transform translateX(-50%)
+      font-size 2.4rem
+      color #0262a1
+      padding 0 !important
+      margin-bottom 0 !important
+      
+      span.tag
+        font-size 24px
+
+      span.units
+        font-size 24px !important
+        font-weight 600 !important
+
+      #score-label
+        margin-bottom 2%
+
+      .score-container
+        display flex 
+        align-items center
+        justify-content center
+        font-weight 600
+
+      #completion-personal-title
+        display block
+        margin-right 5px
+
+      #score-value
+        font-size 43px
+
+      #units
+        margin-left 5px
+
+      span.value
+        margin-left 0px !important
+
+      #score-label
+        display block
+
+      .household-score
+        display block
+
+      &.report
+
+        .household-score
+          display none
+
+      @media (max-height: 700px)
+        .report
+          #score-label
+            display none
+
+      #score-value
+        display inline
+        margin-top -10px
+
+      #score-units
+        font-size 0.6em
+        text-align right
+        position relative
+        top 0
+        padding-right 6px
+        display inline
+
+      .tri
+        display none
+
+      #score-graph, #score-table
+        display none
+
+@media screen-mobile-max
+  #score-ui
+    #meter
+      display none
+
+    #score-display
+      display none
+
+      &.complete
+        display block
+        top 10px !important
+
+        .household-score
+          display flex !important
+          justify-content center
+          font-size 0.55em
+          margin-top -4px
+          line-height normal
+
+        &.report
+          top 60px !important
+
+        #score-label
+          margin-bottom 10px
+          font-size 0.65em
+
+        #score-value
+          font-size 30px
+          margin-top 0px
+
+        #score-units
+          font-size 0.5em
+        
+        .score-container
+          margin-bottom 2%
+        
+        span.value
+          font-size 30px
+          margin-left 4px !important
+

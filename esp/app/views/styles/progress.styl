@@ -1,0 +1,236 @@
+#progress.gone
+  #progress-ui
+    bottom -100px
+
+#progress-ui
+  position fixed
+  bottom 0
+  transition bottom 0.3s ease-out
+  width: 100%
+  font-size 1rem
+  background-color color-turquoise
+  z-index 1000
+
+  #mobile-prompt
+    display none
+
+  .progress-group
+    position relative
+    display inline-block
+    padding 10px 10px 10px 18px
+    color white
+    text-transform uppercase
+    font-weight 600
+    font-size 1.2em
+    line-height 1.6em
+
+    span.progress-group-label
+      margin-left 14px
+      margin-right 4px
+      vertical-align middle
+
+    .tri
+      position absolute
+      top 0
+      left 100%
+      width 0
+      height 0
+      border-left 16px solid color-bg
+      border-top 20px solid transparent
+      border-bottom 20px solid transparent
+      overflow hidden
+
+      &.shadow
+        border-left 20px solid rgba(0,0,0,0.2)
+
+    &#start
+      z-index 5
+      background-color color-turquoise
+      cursor pointer
+
+      &:hover
+        span
+          color color-turquoise-light
+
+      .tri
+        border-left-color color-turquoise
+        &.shadow
+          border-left 20px solid rgba(0,0,0,0.1)
+
+
+    &#indoor-water
+      margin-left -2px
+      z-index 4
+      background-color color-indoor
+      .tri
+        border-left-color color-indoor
+        &.shadow
+          border-left 20px solid rgba(0,0,0,0.15)
+      .progress-label
+        background-color color-indoor
+        .pointer
+          border-top-color color-indoor
+      .progress-node
+        border-color color-indoor
+
+    &#outdoor-water
+      z-index 3
+      background-color color-outdoor
+      .tri
+        border-left-color color-outdoor
+        &.shadow
+          border-left 20px solid rgba(0,0,0,0.1)
+      .progress-label
+        background-color color-outdoor
+        .pointer
+          border-top-color color-outdoor
+      .progress-node
+        border-color color-outdoor
+
+    &#virtual-water
+      z-index 2
+      background-color color-virtual
+      .tri
+        border-left-color color-virtual
+        &.shadow
+          border-left 20px solid rgba(0,0,0,0.1)
+      .progress-label
+        background-color color-virtual
+        .pointer
+          border-top-color color-virtual
+      .progress-node
+        border-color color-virtual
+
+    &#finish
+      margin-left -2px
+      z-index 1
+      background-color color-turquoise
+
+      span
+      .tri
+        border-left-color color-turquoise
+
+      &.active
+        cursor pointer
+
+    &.current.now, &.hover
+      &.set span.progress-group-label
+        margin-right 14px
+
+      .progress-node
+        width 20px
+        height 20px
+        border-width 6px
+        border-radius 10px
+
+        &.current
+          width 14px
+          height 14px
+          border-width 0px
+          border-radius 7px
+          border-color white !important
+          margin 0 3px
+
+  .progress-node
+    position relative
+    display inline-block
+    vertical-align middle
+    width 0px
+    height 0px
+    border-radius 7px
+    border solid
+    border-width 0px
+    background-color rgba(255,255,255,0.5)
+    transition all 0.3s ease-out
+
+    .progress-closed
+      display none
+      color red
+      font-weight 300
+      position absolute
+      top -6px
+      left -2px
+      font-size 1.6em
+
+    .progress-label
+      display none
+      position absolute
+      top -50px
+      transform translate(-50%, -20px)
+      color white
+      font-weight 600
+      border-radius 30px
+      text-align center
+      padding 10px 20px
+      width auto
+      white-space nowrap
+      font-size 0.9em
+
+      .pointer
+        position absolute
+        left 50%
+        top 100%
+        transform translateX(-50%)
+        display block
+        width 0
+        height 0
+        border-top 10px solid color-bg
+        border-left 10px solid transparent
+        border-right 10px solid transparent
+
+
+    &.answered
+      cursor pointer
+      background-color white
+
+    &.answering
+      cursor pointer
+      background-color rgba(255,255,255,0.5)
+
+    &.closed
+      background-color white
+      // opacity 0.5
+
+      &.answering
+        background-color white
+        // opacity 0.5
+
+    &:hover, &.hover
+      .progress-label
+        display inline-block
+
+.footer-text
+  position absolute
+  right 10px
+  bottom 50px
+
+@media screen-mobile-max
+  #progress-ui
+
+    .footer-text
+      display none
+
+    #mobile-prompt
+      display block
+      padding-top 6px
+      height 40px
+      text-transform uppercase
+      cursor pointer
+      color white
+      font-size 1.2em
+      text-transform uppercase
+      font-weight 600
+      letter-spacing 0.03em
+      user-select none
+      width 100vw
+
+      span
+        vertical-align center
+        display block
+
+        &.icon
+          line-height 0.5em
+
+
+    .progress-group
+      display none

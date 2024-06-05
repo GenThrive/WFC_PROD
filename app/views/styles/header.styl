@@ -1,0 +1,129 @@
+#ui-header
+  background-color transparent
+  padding 40px 0
+
+  .logo-main
+    display inline-block
+    background transparent url(../images/logo.png) no-repeat center
+    background-size contain
+    width 336px
+    height 96px
+
+  .logo-minor
+    display inline-block
+    background transparent url(../images/logo-small.png) no-repeat center
+    background-size contain
+    width 170px
+    height 35px
+    display none
+    position absolute
+    top 20px
+    right 20px
+
+  #restart-button
+    display none
+    position absolute
+    top 20px
+    left 40px
+    padding 9px 20px 12px
+    margin 0
+
+  #header-navigation
+    position absolute
+    left 50%
+    transform translateX(-50%)
+    transition top 0.3s ease-out
+    top -100px
+
+    .pill-button
+      background-color color-turquoise
+
+      @media screen-desktop-min
+        &:hover
+          background-color color-turquoise-dark
+
+  &.question, &.complete
+    background-color transparent
+    padding 0
+
+    .logo-main
+      display none
+
+    .logo-minor
+      display block
+
+  &.complete
+    position fixed
+    width 100%
+
+    #restart-button
+      display block
+
+  &.report
+    position fixed
+    backface-visibility hidden
+    transform translateZ(0)
+    width 100%
+
+    #header-navigation
+      position fixed
+      backface-visibility hidden
+      // transform translateZ(0)
+      display inline-block
+      top 14px
+
+  &.report-scroll
+    background-color color-beige
+    height 100px
+
+    #header-navigation
+      display inline-block
+      top 24px
+
+@media screen-mobile-max
+  #ui-header
+    padding 20px
+
+    .logo-main
+      width 220px
+      height 60px
+
+    .logo-minor
+      width 40px
+      height 20px
+      background transparent url(../images/logo-compact.png) no-repeat center
+      background-size contain
+      top 10px
+      right 6px
+
+    #restart-button
+      position absolute
+      top 12px
+      left 10px
+      padding 8px 10px
+      transition top 0.3s ease-out, left 0.3s ease-out
+
+      & > span
+        display none
+
+      & > span.spin
+        display inline-block
+
+        span.icon
+          top 0
+          right 1px
+
+    &.report
+      #header-navigation
+        top 4px
+
+    &.report-scroll
+      background-color fade-out(color-beige, 20%)
+      height 50px
+
+      #restart-button
+        top 6px
+        left 6px
+
+      #header-navigation
+        top 0px

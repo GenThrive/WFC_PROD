@@ -1,0 +1,702 @@
+[
+  {
+    "id": 0,
+    "slug": "household",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Household",
+    "topicESP": "Hogar",
+    "topicIcon": "/images/topic-household.svg",
+    "question": {
+      "textIndividual": "How many people are in your household?",
+      "textGroup": "How many people are in your household?",
+      "textIndividualESP": "¿Cuántas personas hay en su hogar?",
+      "textGroupESP": "¿Cuántas personas hay en su hogar?"
+    } 
+  },
+  {
+    "id": 1,
+    "slug": "shower-duration",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Shower",
+    "topicESP": "Regadera",
+    "topicIcon": "/images/topic-shower.svg",
+    "question": {
+      "textIndividual": "How long is the average shower in your household?",
+      "textGroup": "How long is the average shower in your household?",
+      "link": "/posts/shower-bath/",
+      "image": "/images/shower.svg",
+      "nationalAverage": 11.1,
+      "help" : "Be honest. Do you waste water taking long, hot showers? A 10-minute shower uses 25 gallons or more. Challenge yourself by keeping the time to the length of two songs.",
+      "textIndividualESP": "¿Cuánto tiempo tarda para bañarse en su casa?",
+      "textGroupESP": "¿Cuánto tiempo tarda para bañarse en su casa?",
+      "linkESP": "/posts/ducha-y-banos/",
+      "helpESP" : "Sea honesta. ¿Desperdicia agua tomando largas duchas de agua caliente? Al tomar una ducha de 10 minutos gasta 25 galones de agua o más. Desafíese a sí mismo duchándose durante el tiempo en que tocan dos canciones."
+    }
+  },
+  {
+    "id": 2,
+    "slug": "shower-flow",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Shower",
+    "topicESP": "Regadera",
+    "topicIcon": "/images/topic-shower.svg",
+    "question": {
+      "textIndividual": "Do you have low-flow shower heads?",
+      "textGroup": "Do you have low-flow shower heads?",
+      "link": "/posts/shower-bath/",
+      "image": "/images/showerhead.svg",
+      "help": "If your home was built or remodeled after 1994, you probably have low-flow showerheads, which flow at about 2.5 gallons per minute compared to the standard 5 gallons per minute or more.",
+      "textIndividualESP": "¿Tiene duchas  de bajo flujo?",
+      "textGroupESP": "¿Tiene duchas  de bajo flujo?",
+      "linkESP": "/posts/ducha-y-banos/",
+      "helpESP": "Si su casa fue construida o remodelada después de 1994, es probable que tenga duchas de bajo flujo, en las que literalmente fluyen alrededor de 2,5 galones por minuto en comparación con los 5 litros estándar por minuto."
+    }
+  },
+  {
+    "id": 3,
+    "slug": "baths",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Bathtub",
+    "topicESP": "Tina de Baño",
+    "topicIcon": "/images/topic-baths.svg",
+    "question": {
+      "textIndividual": "Do you take baths? If so, how often? <span class=\"caption\"> (Answer for your entire household.) </span>",
+      "textGroup": "Do you take baths? If so, how often? <span class=\"caption\"> (Answer for your entire household.) </span>",
+      "link": "/posts/shower-bath/",
+      "image": "/images/bath.svg",
+      "nationalAverage": 1.5,
+      "help":"Those relaxing soaks really are luxurious but it takes 70 gallons of water to fill the average bathtub to the brim. (Most people only fill it halfway, but still!)",
+      "textIndividualESP": "¿Se da baños en la tina? Si es así, ¿con qué frecuencia lo hace? <span class=\"caption\"> (Contemple en su respuesta a todos los miembros de su hogar) </span>",
+      "textGroupESP": "¿Se da baños en la tina? Si es así, ¿con qué frecuencia lo hace? <span class=\"caption\"> (Contemple en su respuesta a todos los miembros de su hogar) </span>",
+      "linkESP": "/posts/ducha-y-banos/",
+      "helpESP":"Los baños en tina relajantes son realmente una maravilla pero requieren de 70 galones de agua para llenar la bañera hasta el maximo. (La mayoría de la gente suele llenarla hasta la mitad.)"
+    }
+  },
+  {
+    "id": 5,
+    "slug": "bathroom-sink-duration",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Bathroom Sink",
+    "topicESP": "Lavabo de baño",
+    "topicIcon": "/images/topic-bathroom-sinks.svg",
+    "question": {
+      "textIndividual": "How long do you leave your bathroom faucets running each day? <span class=\"caption\">(Answer for your entire household and include brushing your teeth and shaving.)</span>",
+      "textGroup": "How long do you leave your bathroom faucets running each day? <span class=\"caption\">(Answer for your entire household and include brushing your teeth and shaving.)</span>",
+      "link": "/posts/bathroom-sink/",
+      "image": "/images/bathrom-sinks-running.svg",
+      "help":"Each time you run the faucet while you brush your teeth you’re wasting about 3 gallons per minute.",
+      "textIndividualESP": "¿Por cuánto tiempo deja las llaves  de su lavamanos abiertas cada día? <span class=\"caption\">(Contemple en su respuesta a todos los miembros de su hogar, incluyendo tiempo de cepillado de dientes y afeitado.)</span>",
+      "textGroupESP": "¿Por cuánto tiempo deja las llaves  de su lavamanos abiertas cada día? <span class=\"caption\">(Contemple en su respuesta a todos los miembros de su hogar, incluyendo tiempo de cepillado de dientes y afeitado.)</span>",
+      "linkESP": "/posts/lavabo-del-bano/",
+      "helpESP":"Cada vez que deja correr el agua de su lavabo mientras se cepilla los dientes, está desperdiciando  aproximadamente 3 galones por minuto."
+    }
+  },
+  {
+    "id": 4,
+    "slug": "bathroom-sink-flow",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Bathroom Sink",
+    "topicESP": "Lavabo de baño",
+    "topicIcon": "/images/topic-bathroom-sinks.svg",
+    "question": {
+      "textIndividual": "Do your bathroom sinks have low-flow faucets?",
+      "textGroup": "Do your bathroom sinks have low-flow faucets?",
+      "link": "/posts/bathroom-sink/",
+      "image": "/images/bathrom-sinks.svg",
+      "nationalAverage": 3,
+      "help" : "How low can you flow? If your home was built or remodeled after 1994, you probably have low-flow faucets, which flow as low as 1.5 gallons per minute compared to the standard 3 to 5 gallons per minute.",
+      "textIndividualESP": "¿Tiene su lavamanos  llaves de bajo flujo?",
+      "textGroupESP": "¿Tiene su lavamanos  llaves de bajo flujo?",
+      "linkESP": "/posts/lavabo-del-bano/",
+      "helpESP" : "¿Qué tan lento puede fluir? Si su casa fue construida o remodelada después de 1994, es probable que tenga llaves de bajo flujo, en los que corren alrededor de 1,5 galones por minuto en comparación con los 3 ó 5 galones estándar por minuto."
+    }
+  },
+  {
+    "id": 7,
+    "slug": "toilet-mellow",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Toilet",
+    "topicESP": "Inodoro",
+    "topicIcon": "/images/topic-toilets.svg",
+    "question": {
+      "textIndividual": "Do you \"let it mellow?\"",
+      "textGroup": "Do you \"let it mellow?\"",
+      "link": "/posts/toilet/",
+      "image": "/images/toilets-mellow.svg",
+      "help": "Gross but true: your toilet might be the biggest water hog in your house. So remember, “If it’s yellow, let it mellow. If it’s brown, flush it down.” Every time you skip a flush, you save between 1.5 and 5 gallons!",
+      "textIndividualESP": "¿Usted baja la palanca de su inodoro tras haber orinado?",
+      "textGroupESP": "¿Usted baja la palanca de su inodoro tras haber orinado?",
+      "linkESP": "/posts/inodoro/",
+      "helpESP": "Asqueroso pero cierto: el inodoro puede ser el consumidor  de agua más grande en su casa. Así que recuerde, \"Si es amarillo, déjelo. Si es marrón, deshágase de él.\" Cada vez que usted evita bajar la palanca del inodoro, está ahorrando entre 1.5 y 5 galones!"
+    }
+  },
+  {
+    "id": 6,
+    "slug": "toilet-flow",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Toilet",
+    "topicESP": "Inodoro",
+    "topicIcon": "/images/topic-toilets.svg",
+    "question": {
+      "textIndividual": "Do you have low-flow toilets?",
+      "textGroup": "Do you have low-flow toilets?",
+      "link": "/posts/toilet/",
+      "image": "/images/toilets.svg",
+      "nationalAverage": 14.2,
+      "help": "If your home was built or remodeled after 1994, you probably have low-flow toilets, which use as little as 1.6 gallons per flush compared to the standard 5 to 7 gallons per flush.",
+      "textIndividualESP": "¿Tiene escusados de bajo flujo?",
+      "textGroupESP": "¿Tiene escusados de bajo flujo?",
+      "linkESP": "/posts/inodoro/",
+      "helpESP": "Si su hogar fue construido o remodelado después de 1994, probablemente tiene inodoros de bajo flujo, que utilizan menos de 1.6 galones por descarga en comparación con los tradicionales que gastan de 5 a 7 galones por descarga."
+    }
+  },
+  {
+    "id": 9,
+    "slug": "kitchen-sink-duration",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Kitchen Sink",
+    "topicESP": "Fregadero de la cocina",
+    "topicIcon": "/images/topic-kitchen-sinks.svg",
+    "question": {
+      "textIndividual": "How long do you leave the kitchen faucet running each day? <span class=\"caption\">(Answer for your entire household and include everything but washing dishes.)</span>",
+      "textGroup": "How long do you leave the kitchen faucet running each day? <span class=\"caption\">(Answer for your entire household and include everything but washing dishes.)</span>",
+      "link": "/posts/cooking/",
+      "image": "/images/kitchen-sinks-running.svg",
+      "help": "If you let the faucet run while you clean or cook, you’re letting gallons of water run down the drain.",
+      "textIndividualESP": "¿Por cuánto tiempo deja la llave del fregadero de su cocina abierta cada día? <span class=\"caption\">(Contemple en su respuesta a todos los miembros de su hogar, incluyendo todo menos el  tiempo en que se lava la vajilla.)</span>",
+      "textGroupESP": "¿Por cuánto tiempo deja la llave del fregadero de su cocina abierta cada día? <span class=\"caption\">(Contemple en su respuesta a todos los miembros de su hogar, incluyendo todo menos el  tiempo en que se lava la vajilla.)</span>",
+      "linkESP": "/posts/cocina/",
+      "helpESP": "Si deja el grifo correr mientras limpia o cocina, estará mandando  galones de agua limpia por el desagüe."
+    }
+  },
+  {
+    "id": 8,
+    "slug": "kitchen-sink-flow",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Kitchen Sink",
+    "topicESP": "Fregadero de la cocina",
+    "topicIcon": "/images/topic-kitchen-sinks.svg",
+    "question": {
+      "textIndividual": "Does your kitchen sink have a low-flow faucet?",
+      "textGroup": "Does your kitchen sink have a low-flow faucet?",
+      "link": "/posts/cooking/",
+      "image": "/images/kitchen-sinks.svg",
+      "nationalAverage": 7.1,
+      "help": "If your home was built or remodeled after 1994, you probably have low-flow faucets, which flow as low as 1.5 gallons per minute compared to the standard 3 to 7 gallons per minute.",
+      "textIndividualESP": "¿Tiene el fregadero de su cocina llaves  de bajo flujo?",
+      "textGroupESP": "¿Tiene el fregadero de su cocina llaves  de bajo flujo?",
+      "linkESP": "/posts/cocina/",
+      "helpESP": "Si su hogar fue construido o remodelado después de 1994, probablemente tiene llaves de bajo flujo, en los que fluyen 1.5 galones por minuto en comparación con el estándar de 3 a 7 galones por minuto."
+    }
+  },
+  {
+    "id": 10,
+    "slug": "dishes",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Dishes",
+    "topicESP": "Lavar trastes",
+    "topicIcon": "/images/topic-dishes.svg",
+    "question": {
+      "textIndividual": "How do you wash your dishes? <span class=\"caption\">(Choose all that apply.)</span>",
+      "textGroup": "How do you wash your dishes? <span class=\"caption\">(Choose all that apply.)</span>",
+      "link": "/posts/dish-washing/",
+      "image": "/images/dishes.svg",
+      "nationalAverage": 0.7,
+      "help": "If your dishwasher has the blue Energy Star label it’s water/energy efficient and uses about 4 gallons per load. If you’re not sure, it’s probably standard and uses about 15 gallons per load. Washing dishes by hand uses about 20 gallons per load.",
+      "textIndividualESP": "¿Cómo lava sus trastes? <span class=\"caption\">(Elija las respuestas que más se adecúen a sus hábitos.)</span>",
+      "textGroupESP": "¿Cómo lava sus trastes? <span class=\"caption\">(Elija las respuestas que más se adecúen a sus hábitos.)</span>",
+      "linkESP": "/posts/lavado-de-los-platos/",
+      "helpESP": "Si su lavavajillas tiene la etiqueta azul de Energy Star es una máquina eficiente en cuanto a ahorro de agua y energía, ya que usa alrededor de 4 galones por carga. Si no está segura, probablemente su lavaplatos sea estándar y utilice unos 15 galones por carga. Al lavar los platos a mano utiliza más o menos 20 galones por carga."
+    }
+  },
+  {
+    "id": 11,
+    "slug": "laundry",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Laundry",
+    "topicESP": "Lavandería",
+    "topicIcon": "/images/topic-laundry.svg",
+    "question": {
+      "textIndividual": "How do you do laundry? <span class=\"caption\">(Choose all that apply.)</span>",
+      "textGroup": "How do you do laundry? <span class=\"caption\">(Choose all that apply.)</span>",
+      "link": "/posts/laundry/",
+      "image": "/images/laundry.svg",
+      "nationalAverage": 9.6,
+      "help":"If your washing machine has the blue Energy Star label it’s water/energy efficient and uses about 27 gallons per load. If you’re not sure, it’s probably standard and uses about 41 gallons per load.",
+      "textIndividualESP": "¿Cómo lava su ropa? <span class=\"caption\">(Elija las respuestas que más se adecúen a sus hábitos.)</span>",
+      "textGroupESP": "¿Cómo lava su ropa? <span class=\"caption\">(Elija las respuestas que más se adecúen a sus hábitos.)</span>",
+      "linkESP": "/posts/lavanderia/",
+      "helpESP":"Si su lavadora tiene la etiqueta azul de Energy Star es una máquina eficiente en cuanto a ahorro de agua y energía, ya que usa alrededor de 27 galones por carga. Si no está segura, probablemente su máquina sea estándar y utilice alrededor de 41 galones por carga."
+    }
+  },
+  {
+    "id": 12,
+    "slug": "greywater-system",
+    "group": "Indoor Water",
+    "groupESP": "Agua en el interior",
+    "topic": "Greywater System",
+    "topicESP": "Aguas grises",
+    "topicIcon": "/images/topic-graywater.svg",
+    "tips": {
+      "advice": [
+        "A greywater system lets reuse water from sinks, showers, dishwashers and washing machines to water your yard, and can save about 40 gallons of water per household per day."
+      ]
+    },
+    "question": {
+      "textIndividual": "Do you have a greywater system installed in your home?",
+      "textGroup": "Do you have a greywater system installed in your home?",
+      "link": "/posts/greywater/",
+      "image": "/images/graywater.svg",
+      "nationalAverage": -25,
+      "help":"A greywater system allows households to reuse water from sinks, showers and washing machines for outdoor watering and can save about 40 gallons of water per household per day.",
+      "textIndividualESP": "¿Tiene un sistema de aguas grises instalado en su casa?",
+      "textGroupESP": "¿Tiene un sistema de aguas grises instalado en su casa?",
+      "linkESP": "/posts/aguas-grises/",
+      "helpESP":"Un sistema de aguas grises permite a los hogares reutilizar las aguas de sus lavabos, duchas y lavadoras para regar, y además ahorrar unos 40 galones de agua por hogar al día."
+    }
+  },
+  {
+    "id": 13,
+    "slug": "lawn-and-garden",
+    "group": "Outdoor Water",
+    "groupESP": "Agua exterior",
+    "topic": "Lawn & Garden",
+    "topicESP": "Jardín y Césped",
+    "topicIcon": "/images/topic-lawn-and-garden.svg",
+    "question": {
+      "textIndividual": "Do you water a lawn or garden?",
+      "textGroup": "Do you water a lawn or garden?",
+      "link": "/posts/lawns-gardens/",
+      "image": "/images/lawn.svg",
+      "nationalAverage": 72,
+      "textIndividualESP": "¿ Se riega el césped o jardín?",
+      "linkESP": "/posts/cespedes-y-jardines/",
+      "textGroupESP": "¿ Se riega el césped o jardín?"
+    }
+  },
+  {
+    "id": 14,
+    "slug": "lawn-and-garden-area",
+    "group": "Outdoor Water",
+    "groupESP": "Agua exterior",
+    "topic": "Lawn & Garden",
+    "topicESP": "Jardín y Césped",
+    "topicIcon": "/images/topic-lawn-and-garden.svg",
+    "question": {
+      "textIndividual": "How much do you water?",
+      "textGroup": "How much do you water?",
+      "link": "/posts/lawns-gardens/",
+      "help": "It takes over 600 gallons to water 1000 square feet to a depth of 1 inch.",
+      "textIndividualESP": "¿Cuánto riega?",
+      "textGroupESP": "¿Cuánto riega?",
+      "linkESP": "/posts/cespedes-y-jardines/",
+      "helpESP": "Se necesitan más de 600 galones de agua para regar 1000 pies cuadrados (sq ft) a una profundidad de 1 pulgada."
+    }
+  },
+  {
+    "id": 15,
+    "slug": "lawn-and-garden-xeriscape",
+    "group": "Outdoor Water",
+    "groupESP": "Agua exterior",
+    "topic": "Lawn & Garden",
+    "topicESP": "Jardín y Césped",
+    "topicIcon": "/images/topic-xeriscape.svg",
+    "question": {
+      "textIndividual": "Do you landscape with plants that require little to no water?",
+      "textGroup": "Do you landscape with plants that require little to no water?",
+      "link": "/posts/xeriscape/",
+      "image": "/images/xeriscape.svg",
+      "help":"Planting native flowers and grasses (also known as xeriscaping) can help you cut your lawn watering by at least a third.",
+      "textIndividualESP": "¿ Su jardín está cubierto  con plantas que requieren poco o nada de agua?",
+      "textGroupESP": "¿ Su jardín está cubierto  con plantas que requieren poco o nada de agua?",
+      "helpESP":"Plantar flores nativas y gramíneas (también conocido como Xeriscape) puede ayudarle a reducir el riego en al menos un tercio."
+    }
+  },
+  {
+    "id": 16,
+    "slug": "rain-barrel",
+    "group": "Outdoor Water",
+    "groupESP": "Agua exterior",
+    "topic": "Rain Barrel",
+    "topicESP": "Barril pluvial",
+    "topicIcon": "/images/topic-rainwater-collector.svg",
+    "question": {
+      "textIndividual": "Do you have a rain barrel?",
+      "textGroup": "Do you have a rain barrel?",
+      "link": "/posts/rain-barrels/",
+      "image": "/images/rainwater-collector.svg",
+      "nationalAverage": -1.6,
+      "help":"A rain barrel can save you around 1,300 gallons of water for use outdoors during the peak summer months.",
+      "textIndividualESP": "¿Tiene un barril pluvial?",
+      "textGroupESP": "¿Tiene un barril pluvial?",
+      "linkESP": "/posts/barriles-pluviales/",
+      "helpESP":"Un barril pluvial puede almacenar alrededor de 1,300 galones de agua para su uso en exteriores durante el verano (riego de plantas, lavado de auto, etc)."
+    }
+  },
+  {
+    "id": 17,
+    "slug": "swimming-pool",
+    "group": "Outdoor Water",
+    "groupESP": "Agua exterior",
+    "topic": "Swimming Pool",
+    "topicESP": "Piscina",
+    "topicIcon": "/images/topic-swimming-pool.svg",
+    "question": {
+      "textIndividual": "Do you have a swimming pool?",
+      "textGroup": "Do you have a swimming pool?",
+      "link": "/posts/swimming-pool/",
+      "image": "/images/swimming-pool.svg",
+      "textIndividualESP": "¿Tiene piscina en casa?",
+      "linkESP": "/posts/piscinas/",
+      "textGroupESP": "¿Tiene piscina en casa?"
+    }
+  },
+  {
+    "id": 18,
+    "slug": "swimming-pool-use",
+    "group": "Outdoor Water",
+    "groupESP": "Agua exterior",
+    "topic": "Swimming Pool",
+    "topicESP": "Piscina",
+    "topicIcon": "/images/topic-swimming-pool.svg",
+    "question": {
+      "textIndividual": "How many months out of the year do you keep it covered?",
+      "textGroup": "How many months out of the year do you keep it covered?",
+      "link": "/posts/swimming-pool/",
+      "image": "/images/swimming-cover.svg",
+      "nationalAverage": 23,
+      "help":"Whoa! Uncovered pools can lose up to 1,000 gallons per month.",
+      "textIndividualESP": "¿Cuántos meses al año mantiene su piscina cubierta?",
+      "textGroupESP": "¿Cuántos meses al año mantiene su piscina cubierta?",
+      "linkESP": "/posts/piscinas/",
+      "helpESP":"¡Wow! Las piscinas descubiertas pueden perder hasta 1000 galones de agua por mes."
+    }
+  },
+  {
+    "id": 19,
+    "slug": "cars",
+    "group": "Outdoor Water",
+    "groupESP": "Agua exterior",
+    "topic": "Carwashing",
+    "topicESP": "Autos",
+    "topicIcon": "/images/topic-carwashing.svg",
+    "question": {
+      "textIndividual": "Do you have a car?",
+      "textGroup": "Do you have a car?",
+      "link": "/posts/car-washing/",
+      "image": "/images/car.svg",
+      "textIndividualESP": "¿Tiene auto?",
+      "linkESP": "/posts/lavado-de-vehiculos/",
+      "textGroupESP": "¿Tiene auto?"
+    }
+  },
+  {
+    "id": 20,
+    "slug": "carwashing",
+    "group": "Outdoor Water",
+    "groupESP": "Agua exterior",
+    "topic": "Carwashing",
+    "topicESP": "Autos",
+    "topicIcon": "/images/topic-carwashing.svg",
+    "question": {
+      "textIndividual": "How do you wash your car? <span class=\"caption\">(Choose all that apply; include all cars.)</span>",
+      "textGroup": "How do you wash your car? <span class=\"caption\">(Choose all that apply; include all cars.)</span>",
+      "link": "/posts/car-washing/",
+      "image": "/images/car-washing.svg",
+      "nationalAverage": 1,
+      "help":"Washing your car with a garden hose takes about 100 gallons per wash. An drive through car wash uses about 58 gallons and a self-service car wash uses 14 gallons.",
+      "textIndividualESP": "¿Cómo lava su auto? <span class=\"caption\">(Elija todas las respuestas que apliquen, incluyendo el total de sus autos.)</span>",
+      "textGroupESP": "¿Cómo lava su auto? <span class=\"caption\">(Elija todas las respuestas que apliquen, incluyendo el total de sus autos.)</span>",
+      "linkESP": "/posts/lavado-de-vehiculos/",
+      "helpESP":"Al lavar su coche con una manguera de jardín gasta cerca de 100 galones de agua. Una unidad de lavado de coches utiliza alrededor de 58 galones y un lavado de autos de autoservicio 14 galones."
+    }
+  },
+  {
+    "id": 21,
+    "slug": "virtual-water-use",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Virtual Water Use",
+    "topicESP": "Agua Virtual",
+    "topicHidden": true,
+    "topicIcon": "/images/topic-virtual-water.svg",
+    "question": {
+      "textIndividual": "</p><p class=\"info\">Let's take a break. You’ve answered a bunch of questions about your <strong>direct water use</strong> and so far that’s added up to <span id=\"get_result\"></span> gallons, but that’s just a small part of your total water footprint. You’re about to find out how much water goes into making the food you eat, the things you buy and the energy you use; it’s what’s known as your <b>virtual water use</b>. Let’s go!</p>",
+      "textGroup": "</p><p class=\"info\">Let's take a break. You’ve answered a bunch of questions about your <strong>direct water use</strong> and so far that’s added up to <span id=\"get_result\"></span> gallons, but that’s just a small part of your total water footprint. You’re about to find out how much water goes into making the food you eat, the things you buy and the energy you use; it’s what’s known as your <b>virtual water use</b>. Let’s go!</p>",
+      "image": "/images/virtual-water.svg",
+      "textIndividualESP": "</p><p class=\"info\">¡Tomemos un descanso! Ha contestado un montón de preguntas respecto al uso de agua directa, y hasta ahora lo único que ha visto son <span id=\"get_result\"></span> de galones agregados, pero eso es sólo una pequeña parte de su huella hídrica total. Está a punto de averiguar cuánta agua necesita la comida que consume, lo que compra y la energía que utiliza; lo que se conoce como uso de agua virtual. ¡Vamos!</p>",
+      "textGroupESP": "</p><p class=\"info\">¡Tomemos un descanso! Ha contestado un montón de preguntas respecto al uso de agua directa, y hasta ahora lo único que ha visto son <span id=\"get_result\"></span> de galones agregados, pero eso es sólo una pequeña parte de su huella hídrica total. Está a punto de averiguar cuánta agua necesita la comida que consume, lo que compra y la energía que utiliza; lo que se conoce como uso de agua virtual. ¡Vamos!</p>"
+    }
+  },
+  {
+    "id": 22,
+    "slug": "driving",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Driving",
+    "topicESP": "Conducción",
+    "topicIcon": "/images/topic-driving.svg",
+    "question": {
+      "textIndividual": "How many miles do you drive per week? <span class=\"caption\">(Include carpooling miles.)</span>",
+      "textGroup": "How many miles do you drive per week? <span class=\"caption\">(Include carpooling miles.)</span>",
+      "link": "/posts/gasoline/",
+      "nationalAverage": 5,
+      "help":"It takes a lot of water to produce gasoline. Seriously! On average, 1 mile driven = about 3/4 of a gallon of water.",
+      "textIndividualESP": "¿Cuántas millas recorre por semana? <span class=\"caption\">(Incluya las millas de las otras personas con quienes comparte su auto si es el caso.)</span>",
+      "textGroupESP": "¿Cuántas millas recorre por semana? <span class=\"caption\">(Incluya las millas de las otras personas con quienes comparte su auto si es el caso.)</span>",
+      "linkESP": "/posts/gasolina/",
+      "helpESP":"Se requiere de mucha agua para producir gasolina. ¡En serio! En promedio, 1 milla conducida equivale a aproximadamente 3/4 de galón de agua."
+    }
+  },
+  {
+    "id": 23,
+    "slug": "electricity-state",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Electricity",
+    "topicESP": "Electricidad",
+    "topicIcon": "/images/topic-electricity.svg",
+    "question": {
+      "textIndividual": "Where do you live?",
+      "textGroup": "Where do you live?",
+      "link": "/posts/electricity/",
+      "image": "/images/state.svg",
+      "nationalAverage": 30,
+      "help" : "Electricity generation varies from state to state. Fuel sources include coal, natural gas, nuclear fuels, water, wind, the sun and others and each has a different water footprint.",
+      "textIndividualESP": "¿En dónde vive?",
+      "textGroupESP": "¿En dónde vive?",
+      "linkESP": "/posts/electricidad/",
+      "helpESP" : "Generar electricidad varía de un Estado a otro. Las fuentes de combustible incluyen carbón, gas natural, combustibles nucleares, agua, viento, sol, entre otros y cada uno tiene una huella hídrica diferente."
+    }
+  },
+  {
+    "id": 24,
+    "slug": "electricity-generation",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Electricity",
+    "topicESP": "Electricidad",
+    "topicIcon": "/images/topic-electricity.svg",
+    "question": {
+      "textIndividual": "Where does your electricity come from? <span class=\"caption\">(Include green power programs as utility.)</span> ",
+      "textGroup": "Where does your electricity come from? <span class=\"caption\">(Include green power programs as utility.)</span> ",
+      "link": "/posts/electricity/",
+      "help": "Most of us get our electricity from a utility company, but people who invest in solar or wind can save money and water!",
+      "textIndividualESP": "¿De dónde proviene su electricidad? <span class=\"caption\">(Incluya los programas de energía verde como utilidad.)</span> ",
+      "textGroupESP": "¿De dónde proviene su electricidad? <span class=\"caption\">(Incluya los programas de energía verde como utilidad.)</span> ",
+      "linkESP": "/posts/electricidad/",
+      "helpESP": "La mayoría de nosotros obtiene la electricidad de una compañía de electricidad, pero las personas que invierten en energía solar o viento ¡pueden ahorrar dinero y agua!"      
+    }
+  },
+  {
+    "id": 25,
+    "slug": "shopping-habits",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Shopping Habits",
+    "topicESP": "Hábitos de compra",
+    "topicIcon": "/images/topic-shopping.svg",
+    "question": {
+      "textIndividual": "How much do you shop? <br> <span class=\"caption\">(Don’t include groceries; we’ll get to that soon.)</span>",
+      "textGroup": "How much do you shop? <br> <span class=\"caption\">(Don’t include groceries; we’ll get to that soon.)</span>",
+      "link": "/posts/smarter-shopping/",
+      "image": "/images/shopping.svg",
+      "nationalAverage": 583,
+      "help":"From your jeans to your phone to your furniture, all the new stuff that you buy takes a lot of water to make.",
+      "textIndividualESP": "¿Cuánto compra? <br> <span class=\"caption\">(No incluya alimentos; llegaremos ahí pronto.)</span>",
+      "textGroupESP": "¿Cuánto compra? <br> <span class=\"caption\">(No incluya alimentos; llegaremos ahí pronto.)</span>",
+      "linkESP": "/posts/realice-compras-mas-sabias/",
+      "helpESP":"Desde los jeans, su teléfono y hasta sus muebles- todas las cosas nuevas que puede comprar- requieren de mucha agua para producirse."
+    }
+  },
+  {
+    "id": 26,
+    "slug": "paper",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Paper",
+    "topicESP": "Papel",
+    "topicIcon": "/images/topic-recycling.svg",
+    "question": {
+      "textIndividual": "Do you recycle <b>PAPER</b>?",
+      "textGroup": "Do you recycle <b>PAPER</b>?",
+      "link": "/posts/recycle-paper/",
+      "image": "/images/recycling-paper.svg",
+      "nationalAverage": -2.7,
+      "help":"Recycling a pound of paper, less than the weight of an average newspaper, saves about 3.5 gallons of water.",
+      "textIndividualESP": "¿Recicla el papel?",
+      "textGroupESP": "¿Recicla el papel?",
+      "linkESP": "/posts/recicle-los-papeles/",
+      "helpESP":"Reciclar una libra de papel- menos del peso de un periódico promedio- representa ahorrar alrededor de 3.5 galones de agua."
+    }
+  },
+  {
+    "id": 27,
+    "slug": "plastic",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Plastic",
+    "topicESP": "Plástico",
+    "topicIcon": "/images/topic-recycling.svg",
+    "question": {
+      "textIndividual": "Do you recycle <b>PLASTIC</b>?",
+      "textGroup": "Do you recycle <b>PLASTIC</b>?",
+      "link": "/posts/recycle-plastic/",
+      "image": "/images/recycling-plastic.svg",
+      "nationalAverage": -1.1,
+      "help":"You can save up to 12 gallons of water per day by recycling all of your plastic.",
+      "textIndividualESP": "¿Recicla el plástico?",
+      "textGroupESP": "¿Recicla el plástico?",
+      "linkESP": "/posts/recicle-los-plasticos/",
+      "helpESP":"Usted puede ahorrar hasta 12 galones de agua por día reciclando todo el plástico."
+    }
+  },
+  {
+    "id": 28,
+    "slug": "recycling-metal-and-glass",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Bottles & Cans",
+    "topicESP": "Botellas y latas",
+    "topicIcon": "/images/topic-recycling.svg",
+    "question": {
+      "textIndividual": "Do you recycle <b>BOTTLES & CANS</b>?",
+      "textGroup": "Do you recycle <b>BOTTLES & CANS</b>?",
+      "link": "/posts/recycle-glass/",
+      "image": "/images/recycling-metal-and-glass.svg",
+      "nationalAverage": -8,
+      "help" : "When you recycle bottles and cans you save resources like energy and metals in addition to saving a little bit of water.",
+      "textIndividualESP": "¿Recicla las latas y las botellas?",
+      "textGroupESP": "¿Recicla las latas y las botellas?",
+      "linkESP": "/posts/recicle-botellas-y-latas/",
+      "helpESP" : "Cuando recicla botellas y latas, está ahorrando recursos como energía y metales, además de ahorrar un poco de agua."
+    }
+  },
+  {
+    "id": 29,
+    "slug": "fabrics",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Fabrics",
+    "topicESP": "Telas",
+    "topicIcon": "/images/topic-recycling.svg",
+    "question": {
+      "textIndividual": "Do you donate or re-use old clothing, sheets, blankets and towels?",
+      "textGroup": "Do you donate or re-use old clothing, sheets, blankets and towels?",
+      "link": "/posts/reuse-recycle-clothes-and-linens/",
+      "image": "/images/recycling-fabric.svg",
+      "nationalAverage": -0.8,
+      "help":"It takes about 100 gallons to grow and process 1 pound of cotton. On average, we go through about 35 pounds per person of new cotton each year.",
+      "textIndividualESP": "¿Dona o reutiliza sus toallas, sábanas, frazadas y ropa vieja?",
+      "textGroupESP": "¿Dona o reutiliza sus toallas, sábanas, frazadas y ropa vieja?",
+      "linkESP": "/posts/reutilice-o-recicle-prendas-y-ropa-de-cama/",
+      "helpESP":"Se requieren cerca de 100 galones de agua para cultivar y procesar una libra de algodón. En promedio, cada persona utiliza 35 libras de algodón nuevo cada año."
+    }
+  },
+  {
+    "id": 30,
+    "slug": "diet-distribution",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Diet",
+    "topicESP": "Dieta",
+    "topicIcon": "/images/topic-diet.svg",
+    "question": {
+      "textIndividual": "What’s your diet? <span class=\"caption\">(Make a selection for each person.)</span>",
+      "textGroup": "What’s your diet? <span class=\"caption\">(Make a selection for each person.)</span>",
+      "link": "/posts/food-choices/",
+      "image": "/images/diet.svg",
+      "nationalAverage": 1063,
+      "help":"For you meat eaters, you’ll tell us how many servings of meat next. On average, the water footprint of a vegan or vegetarian is around half that of a meat eater.",
+      "textIndividualESP": "¿Cuál es su dieta? <span class=\"caption\">(Haga una selección por persona.)</span>",
+      "textGroupESP": "¿Cuál es su dieta? <span class=\"caption\">(Haga una selección por persona.)</span>",
+      "linkESP": "/posts/eleccion-de-alimentos/",
+      "helpESP":"Para los consumidores de carne, mencione a continuación ¿cuántas porciones de carne consume? En promedio, la huella hídrica de un vegano o vegetariano es alrededor de la mitad de un consumidor de carne."
+    }
+  },
+  {
+    "id": 31,
+    "slug": "diet-meat-servings",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Diet",
+    "topicESP": "Dieta",
+    "topicIcon": "/images/topic-diet.svg",
+    "question": {
+      "textIndividual": "How often do you eat meat? ",
+      "textGroup": "How often do you eat meat? ",
+      "link": "/posts/food-choices/",
+      "image": "/images/diet-meat.svg",
+      "help": "Producing meat and dairy takes a lot more water than most veggies, beans and grains.",
+      "textIndividualESP": "¿Cuán a menudo come carne?",
+      "textGroupESP": "¿Cuán a menudo come carne?",
+      "linkESP": "/posts/eleccion-de-alimentos/",
+      "helpESP": "Producir carne y productos lácteos requiere mucho más agua que la mayoría de las verduras, los frijoles y los granos."
+    }
+  },
+  {
+    "id": 32,
+    "slug": "pet-food",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Pet Food",
+    "topicESP": "Comida para mascota",
+    "topicIcon": "/images/topic-petfood.svg",
+    "question": {
+      "textIndividual": "How much money do you spend on dog and cat food each month?",
+      "textGroup": "How much money do you spend on dog and cat food each month?",
+      "link": "/posts/pet-food-purchases/",
+      "image": "/images/petfood.svg",
+      "nationalAverage": 48,
+      "help":"It takes a lot of water to produce pet food, too!",
+      "textIndividualESP": "¿Cuánto dinero gasta usted en alimento para gatos y perros cada mes?",
+      "textGroupESP": "¿Cuánto dinero gasta usted en alimento para gatos y perros cada mes?",
+      "linkESP": "/posts/compra-de-alimentos-para-mascotas/",
+      "helpESP":"¡Producir comida para mascotas requiere también de mucha agua!"
+    }
+  },
+  {
+    "id": 33,
+    "slug": "most-interested-in",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Two more questions to go.",
+    "topicESP": "Dos más para terminar",
+    "topicHidden": true,
+    "topicIcon": "/images/topic-survey.svg",
+    "question": {
+      "textIndividual": "<b>What are you <u>most</u> interested in?</b><span class=\"caption\">(We know it’s hard, but choose just one.)</span>",
+      "textGroup": "<b>What are you <u>most</u> interested in?</b> <span class=\"caption\">(We know it’s hard, but choose just one.)</span>",
+      "textIndividualESP": "¿En qué está más interesada? <span class=\"caption\">(Sabemos que es difícil, pero elija sólo una opción.)</span>",
+      "textGroupESP": "¿En qué está más interesada? <span class=\"caption\">(Sabemos que es difícil, pero elija sólo una opción.)</span>"
+    }
+  },
+  {
+    "id": 34,
+    "slug": "learned-the-most-about",
+    "group": "Virtual Water",
+    "groupESP": "Agua virtual",
+    "topic": "Final Question!",
+    "topicESP": "¡Pregunta final!",
+    "topicHidden": true,
+    "topicIcon": "/images/topic-survey.svg",
+    "question": {
+      "textIndividual": "<b>What do you <u>most</u> want to learn about?</b> <span class=\"caption\">(Same deal – just the one.)</span>",
+      "textGroup": "<b>What do you <u>most</u> want to learn about?</b> <span class=\"caption\">(Same deal – just the one.)</span>",
+      "textIndividualESP": "¿Sobre qué tema  le interesa más aprender? <span class=\"caption\">(Escoja sólo una opción.)</span>",
+      "textGroupESP": "¿Sobre qué tema  le interesa más aprender? <span class=\"caption\">(Escoja sólo una opción.)</span>"
+    }
+  }
+]

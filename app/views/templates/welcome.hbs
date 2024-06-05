@@ -1,0 +1,99 @@
+<div class="content-container">
+  <h1 class="start-h1">What’s your water footprint?</h1>
+  <p>This calculator helps you estimate your total water use. You know water comes from the tap, but do you know how much water goes into your sandwich? Your gadgets? The electricity that powers them? Soon you will!</p>
+
+  <div class="options">
+    {{#if isFirst}}
+      <div class="pill-button" role="button" id="start-btn">
+        <span>Get Started</span>
+        <span class="icon icon-chevron-right"></span>
+      </div>
+    {{else}}
+
+      {{#if isComplete}}
+        <div class="pill-button" role="button" id="complete-btn">
+          <span>View Score</span>
+          <span class="icon icon-chevron-right"></span>
+        </div>
+      {{else}}
+        <div class="pill-button" role="button" id="continue-btn">
+          <span>Continue</span>
+          <span class="icon icon-chevron-right"></span>
+        </div>
+      {{/if}}
+
+      <div class="pill-button" role="button" id="restart-btn">
+        <span>Restart</span>
+        <span class="spin"><span class="flip icon icon-clockwise"></span></span>
+      </div>
+    {{/if}}
+  </div>
+
+  <div class="feature">
+    <p><a href="/esp/">¿Cuál es su Huella Hídrica?</a></p>
+  </div>
+
+  <div class="divider-welcomePage">
+    <p class="question-text">
+      <a href="/" target="_blank">Dive deeper</a><br>
+      <span class="caption">Tips, articles and educational material</span>
+    </p>
+  </div>
+  <a href="/how-to-save-water/" target="_blank">
+    <div class="category-ui dive-btn">
+      <div class="category-title">Save Water</div>
+    </div>
+  </a>
+  <a href="/water-footprints-101/" target="_blank">
+    <div class="category-ui dive-btn">
+      <div class="category-title">Water Use</div>
+    </div>
+  </a>
+  <a href="/educational-resources/" target="_blank">
+    <div class="category-ui dive-btn">
+      <div class="category-title">Education</div>
+    </div>
+  </a>
+  
+  {{!-- <div class="feature-left">
+    <p><a href="/esp/">en español<br>¿Cuál es su Huella Hídrica?</a></p>
+  </div>
+
+  <div class="feature-right">
+    <p><a href="/intro/" target="_blank">learn more<br>About Your Water Footprint</a></p>
+  </div> --}}
+
+  <div class="social">
+    <a href="https://www.pinterest.com/WaterCalculator" title="Pinterest" target="_blank"><i class="fa-pinterest-square fa-3x" data-x-icon="&#xf0d3;" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="disclaimer">
+    <p>This calculator relies on US national averages and approximations and is for people living in the US. Your results should be considered an estimate.</p>
+  </div>
+
+  <div class="footer">
+    <p>
+      <a href="/" target="_blank">LEARN MORE</a>
+      <a href="/about/" target="_blank">ABOUT</a>
+      <a href="mailto:info@watercalculator.org">CONTACT US</a>
+      <a href="#"><span class="feedback text">FEEDBACK</span></a>
+      <a href="https://watercalculator.org/privacy-and-terms-of-use/" target="_blank">PRIVACY&nbsp;AND TERMS OF USE</a>
+    </p>
+    <p>© <span id="year"></span> GRACE Communications Foundation. All&nbsp;Rights&nbsp;Reserved.</p>
+  </div>
+
+</div>
+
+<script>
+    //special campaign requirements for displaying WFC in iframe on savethedropla.org
+    if ( window.location !== window.parent.location ) {
+      //app is being run inside an iframe
+      if ( document.referrer.indexOf('savethedropla') > -1 ) {
+        document.getElementById('social').style.visibility = 'hidden';
+      }
+    } 
+</script>
+
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>

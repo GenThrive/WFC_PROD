@@ -1,0 +1,550 @@
+.content-container
+  max-width 640px
+  margin 0 auto
+  padding 0 20px
+
+.content-footer
+  position absolute
+  bottom 0
+  width 100%
+  padding-bottom 30px
+
+  @media screen-mobile-max
+    position relative
+    padding-bottom 0px
+
+h1
+  font-weight 600
+  font-size 4.2em
+  color color-turquoise
+
+p
+  font-size 1.8em
+  line-height 1.3em
+
+start-h1 
+  border-top 1px solid #a7e3e0
+  padding-top 20px
+  
+h3
+  font-weight 600
+  font-style normal
+  color color-turquoise
+  font-size 1.4em
+
+.social-option
+  display inline-block
+  margin 4px
+  width 50px
+  height 50px
+  cursor pointer
+
+  &#feedback 
+    background transparent url("../images/feedback.svg") no-repeat center
+
+  &#twitter
+    background transparent url(../images/twitter.svg) no-repeat center
+
+  &#facebook
+    background transparent url(../images/facebook.svg) no-repeat center
+
+  &#google-plus
+    background transparent url(../images/google-plus.svg) no-repeat center
+
+  &#email
+    background transparent url(../images/email.svg) no-repeat center
+
+  &#reminder 
+    background transparent url("../images/email.svg") no-repeat center
+
+html.no-touch
+  .social-option:hover
+    opacity 0.5
+
+ul.horizontal
+  li
+    display inline-block
+
+// General Button Styles
+.pill-button
+  display inline-block
+  margin 8px 4px
+  padding 10px 18px 12px
+  border-radius 60px
+  background-color color-bg
+  color white
+  text-transform uppercase
+  font-size 1.4em
+  letter-spacing 0.05em
+  font-weight 600
+  cursor pointer
+  line-height 1em
+  box-shadow 0 6px 0 rgba(0,0,0,0.1)
+  user-select none
+
+  &.disabled
+    opacity 0.5
+    background-color color-beige-dark
+    pointer-events none !important
+
+    span
+      pointer-events none !important
+
+  span
+    vertical-align middle
+    line-height 1em
+
+  span.icon
+    display inline-block
+    vertical-align middle
+    font-size 1em
+    line-height 1
+    position relative
+    right -6px
+
+    &.icon-chevron-right
+      top 1px
+
+  .spin
+    display inline-block
+    transform rotate(90deg)
+
+    .icon
+      right 0
+      top -6px
+
+  .flip
+    transform scaleX(-1)
+
+  &.ball, &.back
+    padding 8px 10px
+    background-color #409cd0
+    .icon
+      right 0
+
+  &.balloon
+    position relative
+    background-color color-turquoise
+    font-size 2.0em
+    padding 20px 30px
+    margin-top 20px
+    
+    @media screen-mobile-max
+      font-size 1.2em
+      padding 12px
+      width 82%
+
+    .tri
+      display block
+      position absolute
+      top 100%
+      left 50%
+      width 0
+      height 0
+      transform translateX(-50%)
+      border-top 14px solid color-turquoise
+      border-left 14px solid transparent
+      border-right 14px solid transparent
+
+      &.shadow
+        border-top-color rgba(0,0,0,0.075)
+        margin-top 6px
+
+      @media screen-mobile-max
+        display none
+
+    @media screen-desktop-min
+      &:hover
+        background-color color-turquoise-dark
+
+        .tri
+          border-top-color color-turquoise-dark
+          &.shadow
+            border-top-color rgba(0,0,0,0.075)
+
+  &.chosen
+    background-color #409cd0
+
+  @media screen-desktop-min
+    &:hover
+      background-color color-turquoise
+      text-decoration none
+      color white
+      font-weight 600
+
+.multi-choice
+  margin-top 20px
+
+  &.survey
+    .pill-button.choice
+      display block
+      max-width 300px
+      margin-left auto
+      margin-right auto
+
+@media screen-mobile-max
+  .multi-choice
+    padding 10px
+    position relative
+
+    .pill-button.choice
+      width 100%
+      display block
+      margin 0 0 5px
+
+  .pill-button.back, .pill-button.prev-btn
+    display none
+
+// SpinnerUI
+.ui-spinner
+  font-size 1rem
+  padding 20px
+  user-select none
+
+  .ui-spinner-control
+    width 30px
+    height 30px
+    border 2px solid color-turquoise-dark
+    border-radius 50%
+    cursor pointer
+    display inline-block
+    vertical-align middle
+    margin 0 10px
+
+    @media screen-desktop-min
+      &:hover
+        background-color color-beige-dark
+
+    span.icon
+      font-size 1.9em
+      color color-turqoise-dark
+      vertical-align middle
+      line-height 1.5em
+
+    &.dead
+      opacity 0.5
+      cursor default
+
+      &:hover
+        background-color none
+
+  .ui-spinner-display
+    display inline-block
+    vertical-align middle
+    margin 0 10px
+    font-weight 600
+    font-size 4em
+    max-width 50%
+
+    img
+      height 70px
+      vertical-align middle
+
+@media screen-mobile-max
+  .ui-spinner
+    padding 10px 20px
+    .ui-spinner-display
+      max-width 50%
+      img
+        height 50px
+
+.just-me
+  font-size 1.4em
+  font-weight 600
+  margin-top 20px
+  color color-turquoise
+
+// FrequencyUI
+.frequency-selector
+  user-select none
+  font-size 1rem
+  padding 12px
+  background-color #23bdb6
+  border-radius 100px
+  margin-bottom 10px
+  display inline-block
+
+  .descriptor
+    color #09403e
+    font-size 1.3em
+    font-weight 600
+    text-transform uppercase
+    vertical-align middle
+    margin 0 6px
+
+  .ui-spinner, .descriptor
+    display inline-block
+    padding 0
+
+    .ui-spinner-control
+      margin 0 6px
+      border-color #105855
+      color #105855
+
+      @media screen-desktop-min
+        &:hover
+          background-color #1D8B83
+
+    .ui-spinner-display
+      line-height 1em
+      text-transform uppercase
+      color color-gold
+      margin 0 6px
+
+  .ui-spinner.rate
+    .ui-spinner-display
+      font-size 3.2em
+
+  .ui-spinner.frequency
+    .ui-spinner-display
+      font-size 2.4em
+
+@media screen-mobile-max
+  .frequency-selector
+    padding 12px 4px
+    width 90%
+    margin 0 auto 10px
+    border-radius 24px
+
+    .descriptor
+      font-size 0.8em
+      margin 6px auto 4px
+
+    .ui-spinner.rate
+      .ui-spinner-display
+        font-size 1.8em
+        margin 0
+
+    .ui-spinner.frequency
+      .ui-spinner-display
+        font-size 1.8em
+        margin 0
+
+    .ui-spinner
+      .ui-spinner-control
+        margin 0 4px
+        width 26px
+        height 26px
+        line-height 1.4em
+        text-align center
+
+        .icon
+          font-size 1.6em
+
+    .ui-spinner-display
+      margin 0 4px
+      font-size 2.1em
+
+
+
+// SliderUI
+.ui-slider
+  position relative
+
+  width 100%
+  height 80px
+  margin 0 auto
+  z-index 1
+  user-select none
+
+  .ui-slider-track
+    left 20px
+    right 20px
+    top 20px
+    bottom 20px
+    background-color rgba(0,0,0,0.1)
+    position absolute
+    z-index 1
+    border-radius 90px
+
+    .ui-slider-shuttle
+      user-select none
+      position absolute
+      z-index 2
+      top 0
+      bottom 0
+      width 100px
+      background-color color-gold
+      border-radius 90px
+      border 2px solid white
+      cursor pointer
+      line-height 34px
+
+      &.dragging
+        background-color orange
+
+      .ui-slider-shuttle-display
+        color white
+        font-weight 600
+        vertical-align middle
+        font-size 2em
+
+        .icon-menu
+          display inline-block
+          transform rotate(90deg)
+
+.slider-values
+  font-weight 600
+  font-size 2em
+  margin -10px auto 20px
+  width 100%
+  color color-turquoise-text
+  text-align center
+  padding 0 20px
+  clearfix()
+
+  span
+    display inline-block
+    vertical-align top
+    text-align center
+    min-width 100px
+
+    &.left
+      float left
+
+    &.middle
+      position absolute
+      left 50%
+      transform translateX(-50%)
+
+    &.right
+      float right
+
+
+@media screen-desktop-min
+  .slider-bookended
+    user-select none
+    position relative
+    width 100%
+    padding-top 42px
+    margin 20px auto
+
+    .ui-slider, .slider-values
+      width 60%
+
+    .slider-bookend
+      width 160px
+      height 160px
+      position absolute
+      top 0
+      z-index 2
+      border-radius 50%
+      overflow hidden
+      box-shadow 10px 10px 0 rgba(0,0,0,0.1)
+
+      &.left
+        left 0
+
+      &.right
+        right 0
+
+    .slider-values
+      padding 0 20px
+
+      span
+        min-width 100px
+
+    .slider-values.below-bookends
+      color color-bg
+      font-size 4em
+      top 300px
+      width 100%
+      margin-top 40px
+      padding 0
+
+      span
+        width 160px
+        text-align center
+
+@media screen-mobile-max
+  .slider-bookended
+    position relative
+    padding-top 80px
+
+    .slider-bookend
+      width 80px
+      height 80px
+      position absolute
+      top 0
+      z-index 2
+      border-radius 50%
+      overflow hidden
+      box-shadow 10px 10px 0 rgba(0,0,0,0.1)
+
+      &.left
+        left 20px
+
+      &.right
+        right 20px
+
+
+
+#ui-lawn-area
+  #lawn-area
+    position relative
+    top -6px
+
+    @media screen-mobile-max
+      top -3px
+
+      .ui-slider
+        height 60px
+
+        .ui-slider-track
+          bottom 20px
+
+  .ui-slider-track
+    top 0
+    bottom 40px
+
+    .ui-slider-shuttle
+      font-size 0.8em
+      width 190px
+      line-height 3.6em
+
+      @media screen-mobile-max
+        font-size 0.6em
+        width 150px
+        line-height 32px
+
+#lawn-art
+  img
+    max-height 140px
+
+    @media screen-mobile-max
+      max-width 80%
+
+#show-bubble-footprint, #show-bubble-detail
+  background URL("../images/arrow.png") no-repeat #00bcb6 left center
+
+  @media screen-mobile-max
+    display none
+
+ 
+  @media screen-desktop-min  
+    width 150px
+    height 50px
+    display none
+    border-radius 10px
+    box-shadow  3px 3px 3px #ccc
+    font-size 1.4em
+    padding 3px 3px 3px 10px
+    margin 0 0 10px 0
+    font-weight 400
+    position absolute
+    color #fff
+    top 0px
+    left 130px
+    
+#show-bubble-detail 
+     left 155px
+     top 58px
+
+#pet-food.ui-spinner
+  .ui-spinner-display
+    font-size 8em
+    line-height 1em
+
+    .dollar
+      font-size 0.5em
+      vertical-align top

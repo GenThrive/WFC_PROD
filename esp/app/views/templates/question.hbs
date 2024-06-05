@@ -1,0 +1,23 @@
+<h2 class="question-topic">
+  {{#if icon}}
+    <img class="quesetion-topic-icon" src="{{icon}}"></img>
+  {{/if}}
+  <span class="question-topic-label">{{topicText}}</span>
+</h2>
+{{#if art}}
+  <img class="quesetion-art" src="{{art}}"></img>
+{{/if}}
+<p class="question-text">{{{text}}}</p>
+
+<div id="question-interface">
+  {{!-- Render unique question interface view here! --}}
+</div>
+
+{{!-- Possibly maybe we have tips to show for this question? --}}
+{{#if help}}
+  <div id="question-help">
+    <span class="help-toggle question-help-icon"></span>
+    <span class="help-toggle question-close-icon icon icon-cross"></span>
+    <p>{{help}}</p>
+  </div>
+{{/if}}

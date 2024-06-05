@@ -1,0 +1,41 @@
+# BEGIN WFC rewrite logic #
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+# If URL does NOT contain wfc2 in the path
+RewriteCond %{REQUEST_URI} !/wfc2
+RewriteCond %{REQUEST_URI} !/wfc2/esp
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Serve up WP homepage
+RewriteRule . /index.php [L]
+
+# If URL does NOT contain wfc2 in the path
+RewriteCond %{REQUEST_URI} !/wfc2/esp
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Serve up WFC homepage
+RewriteRule . /wfc2/index.html [L]
+
+# Otherwise, if any file not found
+RewriteCond %{REQUEST_URI} /wfc2/esp
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Serve up WFC homepage
+RewriteRule . /wfc2/esp/index.html [L]
+</IfModule>
+
+# END WFC logic #
+# Beware - Wordpress will modify anything inside of its WORDPRESS comment tags #
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

@@ -1,0 +1,258 @@
+.question-ui
+  font-size 1rem
+  max-width 640px
+  padding 20px
+  padding-bottom 60px
+  margin 0 auto
+  position relative
+
+  @media screen-desktop-small
+    max-width 600px
+
+  &.vertical
+    transform translateY(-50%)
+
+  .question-topic
+    font-size 2.8em
+    color color-turquoise
+    font-weight 300
+    text-transform lowercase
+    border-bottom 1px solid color-turquoise-light
+    padding 10px 0 24px
+    box-shadow 0 1px 0 rgba(255,255,255,0.5)
+    width 80%
+    margin 20px auto
+
+    .question-topic-label
+      vertical-align middle
+
+    .quesetion-topic-icon
+      vertical-align bottom
+      margin-right 4px
+      width 36px
+      height 36px
+      vertical-align middle
+
+  .quesetion-art
+    max-width 300px
+    max-height 80px
+
+    @media screen and (max-width: 479px)
+      display none
+
+    @media screen and (min-height: 481px)
+      max-width 300px
+      max-height 140px
+
+    @media screen and (min-height: 700px)
+      max-width 400px
+      max-height 200px
+
+    @media screen and (min-height: 900px)
+      max-width 480px
+      max-height 240px
+
+    @media screen and (min-height: 1200px)
+      max-width 560px
+      max-height 300px
+
+  .question-text
+    font-size 3em
+    color color-txt
+    font-weight 600
+
+    .caption
+      display block
+      margin 0px 0
+      font-size 50%
+      font-style normal
+      color color-turquoise-text
+      font-weight 500
+
+input[type="text"]
+  margin 20px 0
+  font-size 2.4em
+  padding 8px
+
+#question-help
+  position relative
+  margin-top 20px
+  text-align left
+  padding-left 42px
+  padding-top 6px
+  min-height 32px
+  font-size 1.6em
+  line-height 1.2em
+  color #2f3c49
+  display inline-block
+  margin 20px auto 0
+  max-width 100%
+
+  .question-help-icon
+    position absolute
+    top 0
+    left 0
+    display block
+    width 32px
+    height 32px
+    background transparent url(../images/help.svg) no-repeat top left
+    background-size contain
+
+  .question-close-icon
+    color #fe8f1d
+    font-size 2em
+    display none
+
+  p
+    font-size 1em
+
+
+#state-select
+  padding 10px 20px
+  border-radius 30px
+  background-color color-bg
+  display inline-block
+  margin 10px 0
+  position relative
+  cursor pointer
+
+  select
+    font-size 1.8em
+    border none
+    background-color transparent
+    background-image none
+    color white
+    font-weight 600
+    text-transform capitalize
+    border-radius 4px
+    overflow hidden
+    -webkit-appearance none
+    padding 0
+    margin 0
+    height 25px
+    width 240px
+    outline none
+    position relative
+    z-index 1
+    cursor pointer
+
+    option
+      color white
+      background-color color-bg !important
+      font-weight normal
+      text-transform capitalize !important
+      background white
+
+  .select-crop
+    width 220px
+    overflow hidden
+    margin 0 0px 0 0
+
+  .icon
+    color white
+    font-size 2.4em
+    display block
+    position absolute
+    top 8px
+    right 10px
+    z-index 0
+
+@media screen-mobile-max
+  #state-select
+    max-width 86%
+
+    select
+      width 320px
+      .select-crop
+        width 280px
+
+@media screen-mobile-max
+  .question-ui
+    font-size 0.9rem
+    padding 60px 0 10px
+    max-width none
+    top 0 !important
+
+    &.vertical
+      transform translateY(0) !important
+
+    .question-topic
+      position absolute
+      top 0
+      width 100%
+      margin 0
+      font-size 2em
+      padding 8px 50px
+
+      .quesetion-topic-icon
+        width 24px
+        height 24px
+
+    p
+      padding 0 20px
+
+    .question-text
+      font-size 2.2em
+
+    #question-interface
+      padding-bottom 40px
+
+  #question-help
+    position absolute
+    top 0
+    left 0
+    margin 0
+    padding 0
+    width 40px
+    height 40px
+    background-size 30px
+    z-index 1000
+    background-position 6px 6px
+
+    .help-toggle
+      cursor pointer
+
+    .question-help-icon
+      position absolute
+      top 6px
+      left 6px
+      width 28px
+      height 28px
+
+    p
+      display none
+
+    &.active
+
+      width 100%
+      height 100%
+
+      .question-help-icon
+        display none
+
+      .question-close-icon
+        position absolute
+        top 6px
+        left 6px
+        display block
+
+      p
+        margin 0
+        display block
+        background-color #d2c3a0
+        position absolute
+        width 100%
+        top 42px
+        left 0
+        right 0
+        min-height 100%
+        padding 40px 20px
+        text-align center
+        font-size 1.4em
+
+@media screen-desktop-min
+  #question-help
+    height auto !important
+
+    &.active
+      height auto !important

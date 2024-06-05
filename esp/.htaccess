@@ -1,0 +1,24 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# If URL does NOT contain wfc2 in the path
+RewriteCond %{REQUEST_URI} !/wfc2/esp
+# If file can't be found
+RewriteCond %{REQUEST_FILENAME} !-f
+# if directory can't be found
+RewriteCond %{REQUEST_FILENAME} !-d
+# Serve up WP homepage
+RewriteRule . /index.php [L]
+
+# Otherwise, if any file not found
+RewriteCond %{REQUEST_FILENAME} !-f
+# IF any directory not found
+RewriteCond %{REQUEST_FILENAME} !-d
+# Serve up WFC homepage
+RewriteRule . /wfc2/esp/index.html [L]
+</IfModule>
+
+# END WordPress

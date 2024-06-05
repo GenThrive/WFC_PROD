@@ -1,0 +1,31 @@
+<span class="row1">
+  <div class="click-to-edit-left">Click to Edit</div>
+  <img class="question-topic-icon" src="{{icon}}"/>
+  <h4>{{topic}}</h4>
+</span
+><span class="row2">
+  <div class="edit-item">
+    <span class="icon icon-document-edit">
+      <div class="edit_hover">Click to Edit</div>
+    </span>
+  </div>
+  <span class="description">{{description}}</span>
+</span
+><span class="row3">
+</span
+><span class="row4">
+  <span class="score">{{score}}</span>
+</span
+><span class="row5">
+  <span class="average">{{average}}</span>
+</span
+><span class="row6">
+  {{#if link}}
+    <a class="link tips" style="" href="{{link}}" target="_blank" onclick="trackOutboundLinkNewWindow('{{link}}'); return false;">
+    Tips
+    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+    </a>
+  {{/if}}
+</span>
+
+

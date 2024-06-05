@@ -1,0 +1,9 @@
+#only good for local compilations using the gulp build process - deprecated for new build on server via capistrano\gulp
+namespace :deploy do
+    desc 'Run gulp to compile the static site'
+    task :gulp_build_local do
+      run_locally do
+        execute "gulp",  "  #{fetch(:gulp_tasks)}"
+      end
+    end  
+  end 

@@ -1,0 +1,15 @@
+#AuthType Basic
+#AuthName "WFC2"
+#AuthUserFile /home/grace-prod/gcfprod/html/wfc2/auth/.htpasswd
+#Require valid-user
+
+Options +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteBase /wfc2
+        RewriteRule ^index\.html$ - [L]
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule . /wfc2/index.html [L]
+</IfModule> 

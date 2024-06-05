@@ -1,0 +1,163 @@
+.group-ui
+  position relative
+  font-size 1rem
+  user-select none
+
+  .member
+    display inline-block
+    width 16px
+    height 32px
+    margin 0 4px
+    background transparent url(../images/person-white.svg) no-repeat center
+    background-size contain
+
+    &.used
+      background transparent url(../images/person-dark.svg) no-repeat center
+
+  #member-pool
+    background-color #3caaad
+    padding 12px 24px 10px
+    border-radius 50px
+    display inline-block
+    margin 10px 0 20px
+    box-shadow 0 10px 0 rgba(0,0,0,0.1)
+    height 56px
+    min-width 56px
+
+  .member-node
+    position relative
+    margin 9px auto
+    box-shadow 0 10px 0 rgba(0,0,0,0.1)
+    //width 200px
+    width 250px
+    border-radius 50px
+    height 44px
+
+    .member-controls
+      //width 200px
+      width 250px
+      margin 0 auto
+      padding 12px
+      background-color white
+      font-size 1.4em
+      font-weight 600
+      text-transform uppercase
+      color #2b9194
+      border-radius 50px
+      height 44px
+      position relative
+      z-index 2
+
+    .member-counter
+      position absolute
+      top 0
+      right 0
+      margin 0 auto
+      padding 6px 12px 6px 64px
+      background-color #3caaad
+      font-size 1.4em
+      font-weight 600
+      text-transform uppercase
+      color #2b9194
+      border-top-right-radius 50px
+      border-bottom-right-radius 50px
+      height 44px
+      z-index 1
+      transition right 0.1s ease-out
+
+      .member
+        width 12px
+
+
+    span
+      margin 0 10px
+      vertical-align middle
+
+      &.less, &.more
+        cursor pointer
+        font-size 1.2em
+        line-height 1.4em
+        width 30px
+        height 30px
+        border 2px solid #3caaad
+        border-radius 50%
+        cursor pointer
+        display inline-block
+        vertical-align middle
+        margin 0 10px
+        line-height 1.8em
+        position absolute
+        top 7px
+
+        &.less
+          left 0px
+
+        &.more
+          right 0px
+
+        &:hover
+          color color-turquoise-dark
+
+        &.dead
+          cursor default
+          opacity 0.5
+
+          &:hover
+            color #3caaad
+
+@media screen-mobile-max
+  .group-ui
+    #member-pool
+      max-width 280px
+      border-radius 22px
+      height auto
+      min-height 44px
+      padding 12px 14px
+
+      .member
+        display inline-block
+        width 14px
+        height 28px
+        margin 0 2px
+
+    .member-node
+      overflow hidden
+      border-radius 22px
+      transition height 0.3s ease-out
+      width 280px
+
+      .member-controls
+        width 280px
+
+      .member-counter
+        width 280px
+        top 0
+        left 0
+        right 0 !important
+        text-align center
+        padding-left 12px
+        border-top-left-radius 0
+        border-top-right-radius 0
+        border-bottom-left-radius 22px
+        border-bottom-right-radius 22px
+        transition top 0.3s ease-out
+        border 2px solid white
+
+        .member
+          width 10px
+          height 24px
+          margin 0 1px
+
+      &.active
+        height 88px
+
+        .member-counter
+          top 44px
+
+        .member-controls
+          border-bottom-right-radius 0
+          border-bottom-left-radius 0
+          border-top-left-radius 22px
+          border-top-right-radius 20px
+
+

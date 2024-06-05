@@ -1,0 +1,11 @@
+#c=nvm utility tasks
+
+namespace :nvm do
+    desc 'check node version'
+    task :versions do
+    	on roles(:web) do       
+      		execute "`which node` --version"
+      		#execute "`which nvm` --version"
+    	end
+    end
+end 

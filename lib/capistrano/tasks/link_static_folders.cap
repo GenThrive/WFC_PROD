@@ -1,0 +1,17 @@
+#create and link static directories as needed
+
+namespace :deploy do
+    desc 'Create and link the site and log folders as needed'
+    task :link_static_folders do
+      on roles(:web) do       
+      	#:static_root is defined as a symbol in staging, needs to be fetched with the :
+      	execute :mkdir, "-p #{fetch(:static_root)}/log"
+      	#because a symlink will create new link inside the target if it already exists
+      	execute :rm, "-rf #{fetch(:static_root)}/site"
+      	#now put the link back in the /srv/<sitename>/
+
+      	execute :ln, "-fs #{release_path}/pub/ #{fetch(:static_root)}/site"
+      end
+    end  
+  end 
+

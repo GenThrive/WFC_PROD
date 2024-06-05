@@ -1,0 +1,11 @@
+#ensure that npm install gulp is run in the relase folder prior to actually running the gulp command
+#REQUIRES NODE AND NPM ON DEPLOY TARGET
+#EXPECTS packages.json to exist in release_path
+namespace :deploy do
+    desc 'run bower install'
+    task :bower_install do
+      on roles(:web) do       
+      	execute "cd #{fetch(:release_path)} && $(which bower) install"
+      end
+    end  
+  end 

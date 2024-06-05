@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang='es'>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+  <link rel='canonical' href='https://www.watercalculator.org/esp/'>
+
+  <meta property='og:title' content='GRACE’s Water Footprint Calculator' />
+  <meta property='og:image' content='[root]images/wfc-badge.jpg' />
+  <meta property='og:description' content='Esta calculadora de huella hídrica lo ayuda a estimar el uso diario total de agua, incluido el agua del grifo y el agua virtual. Aprenda cómo ahorrar agua.' />
+  
+  <meta name='description' content='Esta calculadora de huella hídrica lo ayuda a estimar el uso diario total de agua, incluido el agua del grifo y el agua virtual. Aprenda cómo ahorrar agua.' />
+  
+  <!-- required so that chrome browser translation tool does not break the website. Also see html tag language setting.  -->
+  <meta name='google' value='notranslate' />
+  
+  <title>¿Cuál es su Huella Hídrica?</title>
+  
+  <link rel='icon' type='image/gif' href='[root]images/icon.gif?v=123'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+  <script src='[root]app/vendor/modernizr.custom.31718.js'></script>
+  <script src='[root]app/vendor/md5.js'></script>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900,300italic,400italic,600italic,900italic' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='[root]css/vendor/bootstrap.min.css'>
+  <link rel='stylesheet' href='[root]css/vendor/font-awesome.min.css'>
+  <link rel='stylesheet' href='[root]css/vendor/webfont.css'>
+  <link rel='stylesheet' href='[root]css/main.min.css'>
+  <script type='text/javascript'>
+    /** ANALYTICS **/
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-51483554-1', 'watercalculator.org');
+    /** track tips buttons **/
+    var trackOutboundLinkNewWindow = function(url) {
+      console.log('track function called');
+      if (window.ga && ga.loaded) {
+        ga('send', 'event', 'tipsbutton', 'click', url, {
+         'transport': 'beacon',
+         'hitCallback': function(){ makePopup(url); }
+        });
+      } else {
+        //GA blocked by browser
+        makePopup();
+      }  
+    }
+    var makePopup = function (url) {
+      var wfcWin = window.open(url);
+      if(!wfcWin || wfcWin.closed || typeof wfcWin.closed=='undefined') {
+        //send the user to the destination in the current window as a fallback
+        window.location.href = url;      
+      }
+    }
+  </script>
+</head>
+<body>
+  <script data-main='[root]app/main' src='[root]app/vendor/require.js'></script>
+  [livereload]
+</body>
+</html>

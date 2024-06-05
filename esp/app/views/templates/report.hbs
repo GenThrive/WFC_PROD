@@ -1,0 +1,51 @@
+<div id="report-graph">
+  {{!-- Bar Graph --}}
+</div>
+
+<div id="report-table">
+  <div class="report-group thead">
+    <span class="row1">Pregunta</span
+    ><span class="row2">Respuesta</span
+    ><span class="row3">Galones/Día:</span
+    ><span class="row4">Su</span
+    ><span class="row5">Promedio EEUU</span
+    ><span class="row6">Mas Info</span>
+  </div>
+
+  <div id="report-list">
+    {{!-- Report Items --}}
+  </div>
+
+  <div id="report-footer" class="clearfix">
+  
+    <div id="report-footer--compare">
+   
+      <h3>
+        <a href="/footprint/metodologia-de-calculadora-de-huella-hidrica/" target="_blank"><span>Metodología</span>
+      </h3>
+   
+    </div>
+
+    <div id="report-footer--social">
+      <a href="https://www.pinterest.com/WaterCalculator" title="Pinterest" target="_blank"><i class="fa-pinterest-square fa-3x" data-x-icon="&#xf0d3;" aria-hidden="true"></i></a>
+    </div>
+
+    <div id="report-footer--copyright">
+      <p>
+        <a href="/">LEARN MORE</a>
+        <a href="/about/">ABOUT</a>
+        <a href="mailto:info@watercalculator.org">CONTACT US</a>
+        <a href="#"><span class="feedback text">FEEDBACK</span></a>
+        <a href="https://watercalculator.org/privacy-and-terms-of-use/">PRIVACY&nbsp;AND&nbsp;TERMS&nbsp;OF&nbsp;USE</a>
+      </p>
+      <p>© <span id="year"></span> GRACE Communications Foundation. All&nbsp;Rights&nbsp;Reserved.</p>
+    </div>
+
+
+  </div>
+</div>
+
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
