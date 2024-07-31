@@ -1,10 +1,8 @@
 {
   "name": "wfc",
   "version": "0.1.15",
-  "authors": [
-    "amalkine <andre@evolvingmedia.net>"
-  ],
-  "description": "GRACE Water Footprint Calculator",
+  "authors": ["amalkine <andre@evolvingmedia.net>"],
+  "description": "Water Footprint Calculator",
   "main": "app/main.js",
   "ignore": [
     "**/.*",

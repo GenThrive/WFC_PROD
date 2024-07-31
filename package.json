@@ -1,7 +1,7 @@
 {
   "name": "wfc",
   "version": "0.1.13",
-  "description": "GRACE Water Footprint Calculator",
+  "description": "Water Footprint Calculator",
   "main": "app/main.js",
   "devDependencies": {
     "connect": "^2.13.1",
