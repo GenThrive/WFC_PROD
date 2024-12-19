@@ -1,4 +1,4 @@
-# Grace Water Footprint Calculator - Deployment/Build Documentation
+# EcoRise Water Footprint Calculator - Deployment/Build Documentation
 
 ### Vendor: EMN
 
@@ -6,7 +6,7 @@ This document describes the dependancies & build steps for the Grace Water Footp
 
 ### Dependancies
 
-The GRACE Water Footprint Calculator requires:
+The EcoRise Water Footprint Calculator requires:
 
 - [Node.js](http://node.js) installed on the build system. As a note, this is only required as a build dependancy
 - Bower (Node Module)
